@@ -1,0 +1,20 @@
+name: Tauri Test Beta CI
+
+on:
+  push:
+    branches:
+      - beta
+
+jobs:
+  build:
+    uses: larrygogo/github-actions/tauri-template.yml@main
+    with:
+      projectName: "tauri-test"
+      buildStage: "beta"
+      nodeVersion: 20
+      buildFetchWebhook: "https://webhook.site/your-webhook"
+    secrets:
+      ossAccessKey: ${{ secrets.OSS_ACCESS_KEY }}
+      ossAccessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+      tauriPrivateKey: ${{ secrets.TAURI_PRIVATE_KEY }}
+      tauriKeyPassword: ${{ secrets.TAURI_PUBLIC_KEY }}
