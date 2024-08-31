@@ -9,7 +9,6 @@ jobs:
   build:
     uses: larrygogo/github-actions/.github/workflows/tauri-template.yml@main
     with:
-      projectName: "tauri-test"
       buildStage: "beta"
       nodeVersion: 20
       buildFeishuWebhook: "https://webhook.site/your-webhook"
@@ -17,4 +16,4 @@ jobs:
       ossAccessKey: ${{ secrets.OSS_ACCESS_KEY }}
       ossAccessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
       tauriPrivateKey: ${{ secrets.TAURI_PRIVATE_KEY }}
-      tauriKeyPassword: ${{ secrets.TAURI_PUBLIC_KEY }}
+      tauriKeyPassword: ${{ secrets.TAURI_KEY_PASSWORD }}
