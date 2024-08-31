@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "tauri-test",
-    "version": "./package.json"
+    "version": "../package.json"
   },
   "tauri": {
     "allowlist": {
