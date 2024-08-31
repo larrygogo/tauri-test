@@ -11,7 +11,7 @@ jobs:
     with:
       buildStage: "beta"
       nodeVersion: 20
-      buildFeishuWebhook: "https://webhook.site/your-webhook"
+      buildFeishuWebhook: "https://open.feishu.cn/open-apis/bot/v2/hook/2d66d885-547c-4695-abdb-0ebc89a3eb92"
     secrets:
       ossAccessKey: ${{ secrets.OSS_ACCESS_KEY }}
       ossAccessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
