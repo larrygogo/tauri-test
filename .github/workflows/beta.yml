@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     uses: larrygogo/github-actions/.github/workflows/tauri-template.yml@main
+    permissions:
+      contents: write
     with:
       buildStage: "beta"
       nodeVersion: 20
